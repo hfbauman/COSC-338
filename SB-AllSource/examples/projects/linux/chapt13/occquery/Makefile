@@ -5,7 +5,7 @@ SRCPATH = ../../../../src/chapt13/$(MAIN)/
 SHAREDPATH = ../../../../src/shared/
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS)
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : $(MAIN)
@@ -21,5 +21,3 @@ $(MAIN) : $(MAIN).o gltools.o math3d.o
 
 clean:
 	rm -f *.o
-
-

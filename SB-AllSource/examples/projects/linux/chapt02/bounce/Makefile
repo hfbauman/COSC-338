@@ -4,12 +4,12 @@ SRCPATH = ../../../../src/chapt02/bounce/
 SHAREDPATH = ../../../../src/shared/
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS)
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : bounce
 
-.cpp.o : 
+.cpp.o :
 	$(CC) -c $(CCFLAGS) $(INCDIRS) $*.cpp
 
 .c.o :
@@ -26,5 +26,3 @@ bounce : bounce.o gltools.o math3d.o
 
 clean:
 	rm -f *.o
-
-

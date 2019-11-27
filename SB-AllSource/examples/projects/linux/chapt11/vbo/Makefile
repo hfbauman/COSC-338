@@ -5,7 +5,7 @@ SRCPATH = ../../../../src/chapt11/vbo/
 SHAREDPATH = ../../../../src/shared/
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS)
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : $(MAIN)
@@ -27,5 +27,3 @@ $(MAIN) : $(MAIN).o gltools.o math3d.o body.o glass.o VBOMesh.o
 
 clean:
 	rm -f *.o
-
-

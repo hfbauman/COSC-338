@@ -4,7 +4,7 @@ SRCPATH = ../../../../src/chapt03/linesw/
 SHAREDPATH = ../../../../src/shared/
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS)
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : linesw
@@ -20,5 +20,3 @@ linesw : linesw.o gltools.o math3d.o
 
 clean:
 	rm -f *.o
-
-
