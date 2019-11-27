@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		39012E0D0B9BE3F50059B27C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39012E0C0B9BE3F50059B27C /* OpenGL.framework */; };
+		39012E1D0B9BE47C0059B27C /* body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E150B9BE47C0059B27C /* body.tga */; };
+		39012E1E0B9BE47C0059B27C /* glass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E160B9BE47C0059B27C /* glass.tga */; };
+		39012E1F0B9BE47C0059B27C /* neg_x.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E170B9BE47C0059B27C /* neg_x.tga */; };
+		39012E200B9BE47C0059B27C /* neg_y.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E180B9BE47C0059B27C /* neg_y.tga */; };
+		39012E210B9BE47C0059B27C /* neg_z.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E190B9BE47C0059B27C /* neg_z.tga */; };
+		39012E220B9BE47C0059B27C /* pos_x.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E1A0B9BE47C0059B27C /* pos_x.tga */; };
+		39012E230B9BE47C0059B27C /* pos_y.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E1B0B9BE47C0059B27C /* pos_y.tga */; };
+		39012E240B9BE47C0059B27C /* pos_z.tga in Resources */ = {isa = PBXBuildFile; fileRef = 39012E1C0B9BE47C0059B27C /* pos_z.tga */; };
+		39012E290B9BE4B30059B27C /* gltools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E260B9BE4B30059B27C /* gltools.cpp */; };
+		39012E2A0B9BE4B30059B27C /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E270B9BE4B30059B27C /* math3d.cpp */; };
+		39012E2B0B9BE4B30059B27C /* VBOMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E280B9BE4B30059B27C /* VBOMesh.cpp */; };
+		39012E300B9BE4E00059B27C /* body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E2C0B9BE4E00059B27C /* body.cpp */; };
+		39012E310B9BE4E00059B27C /* glass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E2D0B9BE4E00059B27C /* glass.cpp */; };
+		39012E320B9BE4E00059B27C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E2E0B9BE4E00059B27C /* main.cpp */; };
+		39012E330B9BE4E00059B27C /* thundergl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 39012E2F0B9BE4E00059B27C /* thundergl.cpp */; };
+		39012E350B9BE4F40059B27C /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39012E340B9BE4F40059B27C /* AGL.framework */; };
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E8E0486CD37000505A6 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 02345980000FD03B11CA0E72 /* main.nib */; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1870340FFE93FCAF11CA0CD7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32DBCF6D0370B57F00C91783 /* FullScreen_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreen_Prefix.pch; sourceTree = "<group>"; };
+		39012E0C0B9BE3F50059B27C /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		39012E150B9BE47C0059B27C /* body.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = body.tga; path = ../../../../src/chapt20/FullScreen/body.tga; sourceTree = SOURCE_ROOT; };
+		39012E160B9BE47C0059B27C /* glass.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = glass.tga; path = ../../../../src/chapt20/FullScreen/glass.tga; sourceTree = SOURCE_ROOT; };
+		39012E170B9BE47C0059B27C /* neg_x.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_x.tga; path = ../../../../src/chapt20/FullScreen/neg_x.tga; sourceTree = SOURCE_ROOT; };
+		39012E180B9BE47C0059B27C /* neg_y.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_y.tga; path = ../../../../src/chapt20/FullScreen/neg_y.tga; sourceTree = SOURCE_ROOT; };
+		39012E190B9BE47C0059B27C /* neg_z.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_z.tga; path = ../../../../src/chapt20/FullScreen/neg_z.tga; sourceTree = SOURCE_ROOT; };
+		39012E1A0B9BE47C0059B27C /* pos_x.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pos_x.tga; path = ../../../../src/chapt20/FullScreen/pos_x.tga; sourceTree = SOURCE_ROOT; };
+		39012E1B0B9BE47C0059B27C /* pos_y.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pos_y.tga; path = ../../../../src/chapt20/FullScreen/pos_y.tga; sourceTree = SOURCE_ROOT; };
+		39012E1C0B9BE47C0059B27C /* pos_z.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pos_z.tga; path = ../../../../src/chapt20/FullScreen/pos_z.tga; sourceTree = SOURCE_ROOT; };
+		39012E260B9BE4B30059B27C /* gltools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = gltools.cpp; path = ../../../../src/shared/gltools.cpp; sourceTree = SOURCE_ROOT; };
+		39012E270B9BE4B30059B27C /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = math3d.cpp; path = ../../../../src/shared/math3d.cpp; sourceTree = SOURCE_ROOT; };
+		39012E280B9BE4B30059B27C /* VBOMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = VBOMesh.cpp; path = ../../../../src/shared/VBOMesh.cpp; sourceTree = SOURCE_ROOT; };
+		39012E2C0B9BE4E00059B27C /* body.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = body.cpp; path = ../../../../src/chapt20/FullScreen/body.cpp; sourceTree = SOURCE_ROOT; };
+		39012E2D0B9BE4E00059B27C /* glass.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = glass.cpp; path = ../../../../src/chapt20/FullScreen/glass.cpp; sourceTree = SOURCE_ROOT; };
+		39012E2E0B9BE4E00059B27C /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../src/chapt20/FullScreen/main.cpp; sourceTree = SOURCE_ROOT; };
+		39012E2F0B9BE4E00059B27C /* thundergl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = thundergl.cpp; path = ../../../../src/chapt20/FullScreen/thundergl.cpp; sourceTree = SOURCE_ROOT; };
+		39012E340B9BE4F40059B27C /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* FullScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				39012E0D0B9BE3F50059B27C /* OpenGL.framework in Frameworks */,
+				39012E350B9BE4F40059B27C /* AGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* FullScreen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* FullScreen */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = FullScreen;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				39012E2C0B9BE4E00059B27C /* body.cpp */,
+				39012E2D0B9BE4E00059B27C /* glass.cpp */,
+				39012E2E0B9BE4E00059B27C /* main.cpp */,
+				39012E2F0B9BE4E00059B27C /* thundergl.cpp */,
+				39012E250B9BE4820059B27C /* Shared */,
+				32DBCF6D0370B57F00C91783 /* FullScreen_Prefix.pch */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				39012E150B9BE47C0059B27C /* body.tga */,
+				39012E160B9BE47C0059B27C /* glass.tga */,
+				39012E170B9BE47C0059B27C /* neg_x.tga */,
+				39012E180B9BE47C0059B27C /* neg_y.tga */,
+				39012E190B9BE47C0059B27C /* neg_z.tga */,
+				39012E1A0B9BE47C0059B27C /* pos_x.tga */,
+				39012E1B0B9BE47C0059B27C /* pos_y.tga */,
+				39012E1C0B9BE47C0059B27C /* pos_z.tga */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+				02345980000FD03B11CA0E72 /* main.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				39012E340B9BE4F40059B27C /* AGL.framework */,
+				39012E0C0B9BE3F50059B27C /* OpenGL.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		39012E250B9BE4820059B27C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				39012E260B9BE4B30059B27C /* gltools.cpp */,
+				39012E270B9BE4B30059B27C /* math3d.cpp */,
+				39012E280B9BE4B30059B27C /* VBOMesh.cpp */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* FullScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "FullScreen" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FullScreen;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FullScreen;
+			productReference = 8D0C4E970486CD37000505A6 /* FullScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "FullScreen" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 20286C29FDCF999611CA2CEA /* FullScreen */;
+			projectDirPath = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* FullScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				8D0C4E8E0486CD37000505A6 /* main.nib in Resources */,
+				39012E1D0B9BE47C0059B27C /* body.tga in Resources */,
+				39012E1E0B9BE47C0059B27C /* glass.tga in Resources */,
+				39012E1F0B9BE47C0059B27C /* neg_x.tga in Resources */,
+				39012E200B9BE47C0059B27C /* neg_y.tga in Resources */,
+				39012E210B9BE47C0059B27C /* neg_z.tga in Resources */,
+				39012E220B9BE47C0059B27C /* pos_x.tga in Resources */,
+				39012E230B9BE47C0059B27C /* pos_y.tga in Resources */,
+				39012E240B9BE47C0059B27C /* pos_z.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				39012E290B9BE4B30059B27C /* gltools.cpp in Sources */,
+				39012E2A0B9BE4B30059B27C /* math3d.cpp in Sources */,
+				39012E2B0B9BE4B30059B27C /* VBOMesh.cpp in Sources */,
+				39012E300B9BE4E00059B27C /* body.cpp in Sources */,
+				39012E310B9BE4E00059B27C /* glass.cpp in Sources */,
+				39012E320B9BE4E00059B27C /* main.cpp in Sources */,
+				39012E330B9BE4E00059B27C /* thundergl.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02345980000FD03B11CA0E72 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1870340FFE93FCAF11CA0CD7 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FullScreen_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = FullScreen;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = FullScreen_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = FullScreen;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "FullScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "FullScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

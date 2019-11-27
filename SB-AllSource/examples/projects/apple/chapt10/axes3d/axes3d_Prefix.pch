@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'axes3d' target in the 'axes3d' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3954828E0B9A7C9E00C3C478 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3954828C0B9A7C9E00C3C478 /* AGL.framework */; };
+		3954828F0B9A7C9E00C3C478 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3954828D0B9A7C9E00C3C478 /* OpenGL.framework */; };
+		3954829F0B9A7D0100C3C478 /* body.tga in Resources */ = {isa = PBXBuildFile; fileRef = 395482970B9A7D0100C3C478 /* body.tga */; };
+		395482A00B9A7D0100C3C478 /* glass.tga in Resources */ = {isa = PBXBuildFile; fileRef = 395482980B9A7D0100C3C478 /* glass.tga */; };
+		395482A10B9A7D0100C3C478 /* neg_x.tga in Resources */ = {isa = PBXBuildFile; fileRef = 395482990B9A7D0100C3C478 /* neg_x.tga */; };
+		395482A20B9A7D0100C3C478 /* neg_y.tga in Resources */ = {isa = PBXBuildFile; fileRef = 3954829A0B9A7D0100C3C478 /* neg_y.tga */; };
+		395482A30B9A7D0100C3C478 /* neg_z.tga in Resources */ = {isa = PBXBuildFile; fileRef = 3954829B0B9A7D0100C3C478 /* neg_z.tga */; };
+		395482A40B9A7D0100C3C478 /* pos_x.tga in Resources */ = {isa = PBXBuildFile; fileRef = 3954829C0B9A7D0100C3C478 /* pos_x.tga */; };
+		395482A50B9A7D0100C3C478 /* pos_y.tga in Resources */ = {isa = PBXBuildFile; fileRef = 3954829D0B9A7D0100C3C478 /* pos_y.tga */; };
+		395482A60B9A7D0100C3C478 /* pos_z.tga in Resources */ = {isa = PBXBuildFile; fileRef = 3954829E0B9A7D0100C3C478 /* pos_z.tga */; };
+		395482AB0B9A7D1E00C3C478 /* body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482A70B9A7D1E00C3C478 /* body.cpp */; };
+		395482AC0B9A7D1E00C3C478 /* glass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482A80B9A7D1E00C3C478 /* glass.cpp */; };
+		395482AD0B9A7D1E00C3C478 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482A90B9A7D1E00C3C478 /* main.cpp */; };
+		395482AE0B9A7D1E00C3C478 /* thundergl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482AA0B9A7D1E00C3C478 /* thundergl.cpp */; };
+		395482B30B9A7D4900C3C478 /* gltools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482B00B9A7D4900C3C478 /* gltools.cpp */; };
+		395482B40B9A7D4900C3C478 /* math3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482B10B9A7D4900C3C478 /* math3d.cpp */; };
+		395482B50B9A7D4900C3C478 /* VBOMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 395482B20B9A7D4900C3C478 /* VBOMesh.cpp */; };
+		8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */; };
+		8D0C4E8E0486CD37000505A6 /* main.nib in Resources */ = {isa = PBXBuildFile; fileRef = 02345980000FD03B11CA0E72 /* main.nib */; };
+		8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20286C33FDCF999611CA2CEA /* Carbon.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0867D6ABFE840B52C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1870340FFE93FCAF11CA0CD7 /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/main.nib; sourceTree = "<group>"; };
+		20286C33FDCF999611CA2CEA /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		32DBCF6D0370B57F00C91783 /* CarbonGLFonts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CarbonGLFonts_Prefix.pch; sourceTree = "<group>"; };
+		3954828C0B9A7C9E00C3C478 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		3954828D0B9A7C9E00C3C478 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		395482970B9A7D0100C3C478 /* body.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = body.tga; path = ../../../../src/chapt20/CarbonGLFonts/body.tga; sourceTree = SOURCE_ROOT; };
+		395482980B9A7D0100C3C478 /* glass.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = glass.tga; path = ../../../../src/chapt20/CarbonGLFonts/glass.tga; sourceTree = SOURCE_ROOT; };
+		395482990B9A7D0100C3C478 /* neg_x.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_x.tga; path = ../../../../src/chapt20/CarbonGLFonts/neg_x.tga; sourceTree = SOURCE_ROOT; };
+		3954829A0B9A7D0100C3C478 /* neg_y.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_y.tga; path = ../../../../src/chapt20/CarbonGLFonts/neg_y.tga; sourceTree = SOURCE_ROOT; };
+		3954829B0B9A7D0100C3C478 /* neg_z.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = neg_z.tga; path = ../../../../src/chapt20/CarbonGLFonts/neg_z.tga; sourceTree = SOURCE_ROOT; };
+		3954829C0B9A7D0100C3C478 /* pos_x.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pos_x.tga; path = ../../../../src/chapt20/CarbonGLFonts/pos_x.tga; sourceTree = SOURCE_ROOT; };
+		3954829D0B9A7D0100C3C478 /* pos_y.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pos_y.tga; path = ../../../../src/chapt20/CarbonGLFonts/pos_y.tga; sourceTree = SOURCE_ROOT; };
+		3954829E0B9A7D0100C3C478 /* pos_z.tga */ = {isa = PBXFileReference; lastKnownFileType = file; name = pos_z.tga; path = ../../../../src/chapt20/CarbonGLFonts/pos_z.tga; sourceTree = SOURCE_ROOT; };
+		395482A70B9A7D1E00C3C478 /* body.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = body.cpp; path = ../../../../src/chapt20/CarbonGLFonts/body.cpp; sourceTree = SOURCE_ROOT; };
+		395482A80B9A7D1E00C3C478 /* glass.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = glass.cpp; path = ../../../../src/chapt20/CarbonGLFonts/glass.cpp; sourceTree = SOURCE_ROOT; };
+		395482A90B9A7D1E00C3C478 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../../../src/chapt20/CarbonGLFonts/main.cpp; sourceTree = SOURCE_ROOT; };
+		395482AA0B9A7D1E00C3C478 /* thundergl.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = thundergl.cpp; path = ../../../../src/chapt20/CarbonGLFonts/thundergl.cpp; sourceTree = SOURCE_ROOT; };
+		395482B00B9A7D4900C3C478 /* gltools.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = gltools.cpp; path = ../../../../src/shared/gltools.cpp; sourceTree = SOURCE_ROOT; };
+		395482B10B9A7D4900C3C478 /* math3d.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = math3d.cpp; path = ../../../../src/shared/math3d.cpp; sourceTree = SOURCE_ROOT; };
+		395482B20B9A7D4900C3C478 /* VBOMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = VBOMesh.cpp; path = ../../../../src/shared/VBOMesh.cpp; sourceTree = SOURCE_ROOT; };
+		4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		8D0C4E960486CD37000505A6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D0C4E970486CD37000505A6 /* CarbonGLFonts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarbonGLFonts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D0C4E910486CD37000505A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E920486CD37000505A6 /* Carbon.framework in Frameworks */,
+				3954828E0B9A7C9E00C3C478 /* AGL.framework in Frameworks */,
+				3954828F0B9A7C9E00C3C478 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195DF8CFFE9D517E11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D0C4E970486CD37000505A6 /* CarbonGLFonts.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20286C29FDCF999611CA2CEA /* CarbonGLFonts */ = {
+			isa = PBXGroup;
+			children = (
+				20286C2AFDCF999611CA2CEA /* Sources */,
+				20286C2CFDCF999611CA2CEA /* Resources */,
+				20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */,
+				195DF8CFFE9D517E11CA2CBB /* Products */,
+			);
+			name = CarbonGLFonts;
+			sourceTree = "<group>";
+		};
+		20286C2AFDCF999611CA2CEA /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				395482AF0B9A7D2400C3C478 /* Shared */,
+				395482A70B9A7D1E00C3C478 /* body.cpp */,
+				395482A80B9A7D1E00C3C478 /* glass.cpp */,
+				395482A90B9A7D1E00C3C478 /* main.cpp */,
+				395482AA0B9A7D1E00C3C478 /* thundergl.cpp */,
+				32DBCF6D0370B57F00C91783 /* CarbonGLFonts_Prefix.pch */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		20286C2CFDCF999611CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				395482970B9A7D0100C3C478 /* body.tga */,
+				395482980B9A7D0100C3C478 /* glass.tga */,
+				395482990B9A7D0100C3C478 /* neg_x.tga */,
+				3954829A0B9A7D0100C3C478 /* neg_y.tga */,
+				3954829B0B9A7D0100C3C478 /* neg_z.tga */,
+				3954829C0B9A7D0100C3C478 /* pos_x.tga */,
+				3954829D0B9A7D0100C3C478 /* pos_y.tga */,
+				3954829E0B9A7D0100C3C478 /* pos_z.tga */,
+				8D0C4E960486CD37000505A6 /* Info.plist */,
+				0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */,
+				02345980000FD03B11CA0E72 /* main.nib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		20286C32FDCF999611CA2CEA /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3954828C0B9A7C9E00C3C478 /* AGL.framework */,
+				3954828D0B9A7C9E00C3C478 /* OpenGL.framework */,
+				20286C33FDCF999611CA2CEA /* Carbon.framework */,
+				4A9504CAFFE6A41611CA0CBA /* CoreServices.framework */,
+				4A9504C8FFE6A3BC11CA0CBA /* ApplicationServices.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		395482AF0B9A7D2400C3C478 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				395482B00B9A7D4900C3C478 /* gltools.cpp */,
+				395482B10B9A7D4900C3C478 /* math3d.cpp */,
+				395482B20B9A7D4900C3C478 /* VBOMesh.cpp */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D0C4E890486CD37000505A6 /* CarbonGLFonts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "CarbonGLFonts" */;
+			buildPhases = (
+				8D0C4E8C0486CD37000505A6 /* Resources */,
+				8D0C4E8F0486CD37000505A6 /* Sources */,
+				8D0C4E910486CD37000505A6 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarbonGLFonts;
+			productInstallPath = "$(HOME)/Applications";
+			productName = CarbonGLFonts;
+			productReference = 8D0C4E970486CD37000505A6 /* CarbonGLFonts.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20286C28FDCF999611CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "CarbonGLFonts" */;
+			hasScannedForEncodings = 1;
+			mainGroup = 20286C29FDCF999611CA2CEA /* CarbonGLFonts */;
+			projectDirPath = "";
+			targets = (
+				8D0C4E890486CD37000505A6 /* CarbonGLFonts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D0C4E8C0486CD37000505A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D0C4E8D0486CD37000505A6 /* InfoPlist.strings in Resources */,
+				8D0C4E8E0486CD37000505A6 /* main.nib in Resources */,
+				3954829F0B9A7D0100C3C478 /* body.tga in Resources */,
+				395482A00B9A7D0100C3C478 /* glass.tga in Resources */,
+				395482A10B9A7D0100C3C478 /* neg_x.tga in Resources */,
+				395482A20B9A7D0100C3C478 /* neg_y.tga in Resources */,
+				395482A30B9A7D0100C3C478 /* neg_z.tga in Resources */,
+				395482A40B9A7D0100C3C478 /* pos_x.tga in Resources */,
+				395482A50B9A7D0100C3C478 /* pos_y.tga in Resources */,
+				395482A60B9A7D0100C3C478 /* pos_z.tga in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D0C4E8F0486CD37000505A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395482AB0B9A7D1E00C3C478 /* body.cpp in Sources */,
+				395482AC0B9A7D1E00C3C478 /* glass.cpp in Sources */,
+				395482AD0B9A7D1E00C3C478 /* main.cpp in Sources */,
+				395482AE0B9A7D1E00C3C478 /* thundergl.cpp in Sources */,
+				395482B30B9A7D4900C3C478 /* gltools.cpp in Sources */,
+				395482B40B9A7D4900C3C478 /* math3d.cpp in Sources */,
+				395482B50B9A7D4900C3C478 /* VBOMesh.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		02345980000FD03B11CA0E72 /* main.nib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1870340FFE93FCAF11CA0CD7 /* English */,
+			);
+			name = main.nib;
+			sourceTree = "<group>";
+		};
+		0867D6AAFE840B52C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0867D6ABFE840B52C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C0E91AC608A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CarbonGLFonts_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = CarbonGLFonts;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C0E91AC708A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CarbonGLFonts_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = CarbonGLFonts;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C0E91ACA08A95435008D54AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Debug;
+		};
+		C0E91ACB08A95435008D54AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0E91AC508A95435008D54AB /* Build configuration list for PBXNativeTarget "CarbonGLFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91AC608A95435008D54AB /* Debug */,
+				C0E91AC708A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0E91AC908A95435008D54AB /* Build configuration list for PBXProject "CarbonGLFonts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0E91ACA08A95435008D54AB /* Debug */,
+				C0E91ACB08A95435008D54AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20286C28FDCF999611CA2CEA /* Project object */;
+}

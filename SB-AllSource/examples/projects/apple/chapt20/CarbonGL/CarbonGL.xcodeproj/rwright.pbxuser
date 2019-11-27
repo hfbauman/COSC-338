@@ -1,0 +1,82 @@
+// !$*UTF8*$!
+{
+	20286C28FDCF999611CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 39CAB7170BF4F03300D86BCB /* CarbonGL */;
+		activeTarget = 8D0C4E890486CD37000505A6 /* CarbonGL */;
+		codeSenseManager = 39CAB7210BF4F03E00D86BCB /* Code sense */;
+		executables = (
+			39CAB7170BF4F03300D86BCB /* CarbonGL */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48.1626,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 200601651;
+			PBXWorkspaceStateSaveDate = 200601651;
+		};
+		sourceControlManager = 39CAB7200BF4F03E00D86BCB /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	39CAB7170BF4F03300D86BCB /* CarbonGL */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CarbonGL;
+		sourceDirectories = (
+		);
+	};
+	39CAB7200BF4F03E00D86BCB /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	39CAB7210BF4F03E00D86BCB /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8D0C4E890486CD37000505A6 /* CarbonGL */ = {
+		activeExec = 0;
+		executables = (
+			39CAB7170BF4F03300D86BCB /* CarbonGL */,
+		);
+	};
+}

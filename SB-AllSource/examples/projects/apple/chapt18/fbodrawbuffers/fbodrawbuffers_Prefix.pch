@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'fbodrawbuffers' target in the 'fbodrawbuffers' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

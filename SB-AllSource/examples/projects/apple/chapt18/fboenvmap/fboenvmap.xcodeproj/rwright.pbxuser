@@ -1,0 +1,120 @@
+// !$*UTF8*$!
+{
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 391A1AEC0BFB77FD00F47B9F /* fboenvmap */;
+		activeTarget = 8D1107260486CEB800E47090 /* fboenvmap */;
+		breakpoints = (
+			395B90B30C02920400873D20 /* fboenvmap.cpp:543 */,
+		);
+		codeSenseManager = 391A1B020BFB780F00F47B9F /* Code sense */;
+		executables = (
+			391A1AEC0BFB77FD00F47B9F /* fboenvmap */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					243,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 201484400;
+			PBXWorkspaceStateSaveDate = 201484400;
+		};
+		sourceControlManager = 391A1B010BFB780F00F47B9F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	391A1AEC0BFB77FD00F47B9F /* fboenvmap */ = {
+		isa = PBXExecutable;
+		activeArgIndex = 2147483647;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = fboenvmap;
+		savedGlobals = {
+			"/Users/rwright/Desktop/SuperBible/examples/projects/apple/chapt18/fboenvmap/build/fboenvmap.build/Debug/fboenvmap.build/Objects-normal/i386/fboenvmap.ob" = (
+				{
+					display = 1;
+					filename = /Users/rwright/Desktop/SuperBible/examples/projects/apple/chapt18/fboenvmap/../../../../src/chapt18/fboenvmap/fboenvmap.cpp;
+					name = maxCubeTexSize;
+				},
+			);
+		};
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	391A1B010BFB780F00F47B9F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+		scmType = "";
+	};
+	391A1B020BFB780F00F47B9F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	3920FF120BB99A9D00AEF53A /* fboenvmap.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {722, 11410}}";
+			sepNavSelRange = "{20025, 10}";
+			sepNavVisRect = "{{0, 8104}, {719, 820}}";
+			sepNavWindowFrame = "{{875, 59}, {758, 949}}";
+		};
+	};
+	395B90B30C02920400873D20 /* fboenvmap.cpp:543 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		delayBeforeContinue = 0;
+		fileReference = 3920FF120BB99A9D00AEF53A /* fboenvmap.cpp */;
+		functionName = "SetupRC()";
+		hitCount = 1;
+		lineNumber = 543;
+		location = fboenvmap.ob;
+		modificationTime = 201495232.941844;
+		state = 1;
+	};
+	8D1107260486CEB800E47090 /* fboenvmap */ = {
+		activeExec = 0;
+		executables = (
+			391A1AEC0BFB77FD00F47B9F /* fboenvmap */,
+		);
+	};
+}

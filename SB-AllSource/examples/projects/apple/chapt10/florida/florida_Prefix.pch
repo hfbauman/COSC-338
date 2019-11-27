@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'florida' target in the 'florida' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif

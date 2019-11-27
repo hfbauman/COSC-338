@@ -1,0 +1,190 @@
+cd chapt01/block
+make
+cd ../..
+cd chapt02/bounce
+make
+cd ../glrect
+make
+cd ../simple
+make
+cd ../../chapt03/lines
+make
+cd ../linesw
+make
+cd ../lstipple
+make
+cd ../lstrips
+make
+cd ../points
+make
+cd ../pointsz
+make
+cd ../pstipple
+make
+cd ../scissor
+make
+cd ../single
+make
+cd ../star
+make
+cd ../stencil
+make
+cd ../triangle
+make
+cd ../../chapt04/atom
+make
+cd ../atom2
+make
+cd ../ortho
+make
+cd ../perspect
+make
+cd ../solar
+make
+cd ../sphereworld
+make
+cd ../transform
+make
+cd ../transformgl
+make
+cd ../../chapt05/ambient
+make
+cd ../ccube
+make
+cd ../jet
+make
+cd ../litjet
+make
+cd ../shadow
+make
+cd ../shinyjet
+make
+cd ../sphereworld
+make
+cd ../spot
+make
+cd ../triangle
+make
+cd ../../chapt06/fogged
+make
+cd ../motionblur
+make
+cd ../multisample
+make
+cd ../reflection
+make
+cd ../smoother
+make
+cd ../sphereworld
+make
+cd ../../chapt07/bitmaps
+make
+cd ../imageload
+make
+cd ../imaging
+make
+cd ../operations
+make
+cd ../../chapt08/pyramid
+make
+cd ../sphereworld
+make
+cd ../toon
+make
+cd ../tunnel
+make
+cd ../../chapt09/anisotropic
+make
+cd ../cubemap
+make
+cd ../multitexture
+make
+cd ../pointsprites
+make
+cd ../sphereworld
+make
+cd ../texgen
+make
+cd ../../chapt10/axes3d
+make
+cd ../bez3d
+make
+cd ../bezier
+make
+cd ../bezlit
+make
+cd ../florida
+make
+cd ../nurbc
+make
+cd ../nurbs
+make
+cd ../nurbt
+make
+cd ../snowman
+make
+cd ../../chapt11/cubedx
+make
+cd ../sphereworld
+make
+cd ../starrynight
+make
+cd ../thunderbird
+make
+cd ../thundergl
+make
+cd ../vbo
+make
+cd ../../chapt12/moons
+make
+cd ../planets
+make
+cd ../select
+make
+cd ../../chapt13/occquery
+make
+cd ../../chapt14/shadowmap
+make
+cd ../../chapt15/shaders
+make
+cd ../../chapt16/vertexblend
+make
+cd ../vertexshaders
+make
+cd ../../chapt17/bumpmap
+make
+cd ../fragmentshaders
+make
+cd ../imageproc
+make
+cd ../lighting
+make
+cd ../proctex
+make
+cd ../../chapt18/fbodrawbuffers
+make
+cd ../fboenvmap
+make
+cd ../fboshadowmap
+make
+cd ../hdrbloom
+make
+cd ../pixbufobj
+make
+cd ../texfloat
+make
+cd ../../chapt21/fonts
+make
+cd ../GLXBasics
+make
+
+
+
+
+
+
+ 
+
+
+
+

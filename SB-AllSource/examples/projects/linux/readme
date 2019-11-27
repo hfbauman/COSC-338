@@ -1,0 +1,25 @@
+Linux... if you are running Linux you almost certainly know more about Linux than me! These are my FIRST Linux make files, so please let me know (gently please) if I'm doing something stupid so that I can improve and/or correct in the future.
+
+To run all the makefiles, start terminal, navigate to this directory and type:
+
+sh build
+
+You will need OpenGL and GLUT for most samples. You will also need openEXR for the texfloat sample in chapter 18.
+
+To create and test these makefiles I used Ubuntu 7.04, running in a VM via Parallels (on a MacBook Pro). I downloaded and installed the following packages (see their installation instructions):
+
+Mesa (for OpenGL 2.0 sofware emulation): mesa3d.org
+FreeGlut (for Glut): http://freeglut.sourceforge.net/
+OpenEXR (high dynamic range/float textures): www.openexr.org
+
+Please e-mail me with tips, and such, but if you ask me questions about running Linux, there is a 99.9% chance that I cannot help you ;-(
+
+Richard S. Wright Jr.
+opengl@bellsouth.net
+
+Updated 7/22/2007
+Added missing bezier make file
+Added additional header include path (to all make files) for RPM installed GLUT
+Fixed compiler warnings in select and hdrbloom
+GLXInfo now compiles
+

@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'occquery' target in the 'occquery' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
