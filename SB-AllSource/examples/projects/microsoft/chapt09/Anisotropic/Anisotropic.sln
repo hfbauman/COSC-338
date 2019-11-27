@@ -1,21 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Anisotropic", "Anisotropic.vcproj", "{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Anisotropic", "Anisotropic.vcxproj", "{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Debug.ActiveCfg = Debug|Win32
-		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Debug.Build.0 = Debug|Win32
-		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Release.ActiveCfg = Release|Win32
-		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Release.Build.0 = Release|Win32
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Debug|x86.ActiveCfg = Debug|Win32
+		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Debug|x86.Build.0 = Debug|Win32
+		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Release|x86.ActiveCfg = Release|Win32
+		{68D6B6B3-5A60-4467-AA00-80EC0F7F69B5}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+		SolutionGuid = {1C48FCB4-FDEE-49DA-A9BA-2F06F30625A1}
 	EndGlobalSection
 EndGlobal

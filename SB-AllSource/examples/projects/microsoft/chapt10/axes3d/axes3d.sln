@@ -1,23 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "axes3d", "axes3d.vcproj", "{A0EAC9F8-FE40-46A3-8DA8-E35467354914}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "axes3d", "axes3d.vcxproj", "{A0EAC9F8-FE40-46A3-8DA8-E35467354914}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Debug|x86.ActiveCfg = Debug|Win32
+		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Debug|x86.Build.0 = Debug|Win32
+		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Release|x86.ActiveCfg = Release|Win32
+		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Debug.ActiveCfg = Debug|Win32
-		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Debug.Build.0 = Debug|Win32
-		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Release.ActiveCfg = Release|Win32
-		{A0EAC9F8-FE40-46A3-8DA8-E35467354914}.Release.Build.0 = Release|Win32
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+		SolutionGuid = {DE05994C-5A37-4AF4-A068-EF0DA53642A0}
 	EndGlobalSection
 EndGlobal

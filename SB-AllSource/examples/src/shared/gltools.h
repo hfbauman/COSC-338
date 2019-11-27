@@ -10,7 +10,7 @@
 #ifndef __GLTOOLS__LIBRARY
 #define __GLTOOLS__LIBRARY
 
-#define FREEGLUT_STATIC
+//#define FREEGLUT_STATIC
 
 // Bring in OpenGL 
 // Windows
@@ -19,7 +19,7 @@
 #include "glee.h"			// OpenGL Extension "autoloader"
 #include <gl\gl.h>			// Microsoft OpenGL headers (version 1.1 by themselves)
 #include <gl\glu.h>			// OpenGL Utilities
-#include "glut.h"			// Glut (Free-Glut on Windows)
+#include <gl\glut.h>			// Glut (Free-Glut on Windows)
 #endif
 
 // Mac OS X

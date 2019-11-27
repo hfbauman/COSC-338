@@ -1,23 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stencil", "stencil.vcproj", "{2442ED42-0A0E-481B-8656-2988FE246F91}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stencil", "stencil.vcxproj", "{2442ED42-0A0E-481B-8656-2988FE246F91}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2442ED42-0A0E-481B-8656-2988FE246F91}.Debug|x86.ActiveCfg = Debug|Win32
+		{2442ED42-0A0E-481B-8656-2988FE246F91}.Debug|x86.Build.0 = Debug|Win32
+		{2442ED42-0A0E-481B-8656-2988FE246F91}.Release|x86.ActiveCfg = Release|Win32
+		{2442ED42-0A0E-481B-8656-2988FE246F91}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{2442ED42-0A0E-481B-8656-2988FE246F91}.Debug.ActiveCfg = Debug|Win32
-		{2442ED42-0A0E-481B-8656-2988FE246F91}.Debug.Build.0 = Debug|Win32
-		{2442ED42-0A0E-481B-8656-2988FE246F91}.Release.ActiveCfg = Release|Win32
-		{2442ED42-0A0E-481B-8656-2988FE246F91}.Release.Build.0 = Release|Win32
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+		SolutionGuid = {BD8D4205-9656-466B-87DD-151DC7980C0F}
 	EndGlobalSection
 EndGlobal

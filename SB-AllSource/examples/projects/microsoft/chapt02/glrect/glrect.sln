@@ -1,23 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glrect", "glrect.vcproj", "{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "glrect", "glrect.vcxproj", "{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Debug|x86.ActiveCfg = Debug|Win32
+		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Debug|x86.Build.0 = Debug|Win32
+		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Release|x86.ActiveCfg = Release|Win32
+		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Debug.ActiveCfg = Debug|Win32
-		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Debug.Build.0 = Debug|Win32
-		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Release.ActiveCfg = Release|Win32
-		{C31ED26B-0610-4CFA-9E2D-3B300ABD9550}.Release.Build.0 = Release|Win32
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+		SolutionGuid = {AA55C2D5-34E2-4D99-BBE8-07FED51C398D}
 	EndGlobalSection
 EndGlobal

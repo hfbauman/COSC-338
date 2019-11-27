@@ -1,23 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointsz", "pointsz.vcproj", "{24EC141A-F595-4D07-9F1E-337E56A71B9A}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "pointsz", "pointsz.vcxproj", "{24EC141A-F595-4D07-9F1E-337E56A71B9A}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Debug|x86.ActiveCfg = Debug|Win32
+		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Debug|x86.Build.0 = Debug|Win32
+		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Release|x86.ActiveCfg = Release|Win32
+		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Debug.ActiveCfg = Debug|Win32
-		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Debug.Build.0 = Debug|Win32
-		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Release.ActiveCfg = Release|Win32
-		{24EC141A-F595-4D07-9F1E-337E56A71B9A}.Release.Build.0 = Release|Win32
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+		SolutionGuid = {1F9D3C47-45D9-490D-B201-B35697F69FF0}
 	EndGlobalSection
 EndGlobal

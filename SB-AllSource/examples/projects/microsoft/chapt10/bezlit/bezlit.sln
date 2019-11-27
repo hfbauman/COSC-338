@@ -1,23 +1,24 @@
-Microsoft Visual Studio Solution File, Format Version 8.00
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bezlit", "bezlit.vcproj", "{B79A5643-5CE3-4F85-9084-FD50CF027ABB}"
-	ProjectSection(ProjectDependencies) = postProject
-	EndProjectSection
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bezlit", "bezlit.vcxproj", "{B79A5643-5CE3-4F85-9084-FD50CF027ABB}"
 EndProject
 Global
-	GlobalSection(SolutionConfiguration) = preSolution
-		Debug = Debug
-		Release = Release
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
 	EndGlobalSection
-	GlobalSection(ProjectDependencies) = postSolution
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Debug|x86.ActiveCfg = Debug|Win32
+		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Debug|x86.Build.0 = Debug|Win32
+		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Release|x86.ActiveCfg = Release|Win32
+		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
-	GlobalSection(ProjectConfiguration) = postSolution
-		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Debug.ActiveCfg = Debug|Win32
-		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Debug.Build.0 = Debug|Win32
-		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Release.ActiveCfg = Release|Win32
-		{B79A5643-5CE3-4F85-9084-FD50CF027ABB}.Release.Build.0 = Release|Win32
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-	EndGlobalSection
-	GlobalSection(ExtensibilityAddIns) = postSolution
+		SolutionGuid = {71D3AC31-FC48-4484-8579-A5DFF4FFC4C2}
 	EndGlobalSection
 EndGlobal
