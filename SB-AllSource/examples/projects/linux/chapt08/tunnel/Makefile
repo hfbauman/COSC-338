@@ -5,7 +5,7 @@ SRCPATH = ../../../../src/chapt08/$(MAIN)/
 SHAREDPATH = ../../../../src/shared/
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES  -lstdc++
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : $(MAIN)

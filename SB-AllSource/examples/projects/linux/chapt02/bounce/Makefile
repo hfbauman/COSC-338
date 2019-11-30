@@ -7,7 +7,7 @@ SHAREDPATH = ../../../../src/shared/
 IMGUI_SRC = ../../../../../../contrib/imgui//imgui.cpp ../../../../../../contrib/imgui//imgui_demo.cpp ../../../../../../contrib/imgui//imgui_draw.cpp ../../../../../../contrib/imgui/imgui_impl_glut.cpp ../../../../../../contrib/imgui//imgui_widgets.cpp ../../../../../../contrib/imgui//imgui_impl_opengl2.cpp
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES -fno-threadsafe-statics -fno-exceptions
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES -fno-threadsafe-statics -fno-exceptions  -lstdc++
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : bounce

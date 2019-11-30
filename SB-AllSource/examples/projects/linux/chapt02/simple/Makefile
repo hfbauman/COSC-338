@@ -4,7 +4,7 @@ SRCPATH = ../../../../src/chapt02/simple/
 SHAREDPATH = ../../../../src/shared/
 
 CC = gcc
-CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES
+CFLAGS = $(COMPILERFLAGS) -g $(INCDIRS) -DGL_GLEXT_PROTOTYPES  -lstdc++
 LIBS = -lglut -lGL -lGLU -lm
 
 prog : simple
