@@ -1,0 +1,292 @@
+From d543ffbd83459214c1927069be3181dd6c87dd2a Mon Sep 17 00:00:00 2001
+From: William Emerison Six <billsix@gmail.com>
+Date: Tue, 14 Jan 2020 11:49:50 -0500
+Subject: [PATCH] build working on Linux
+
+---
+ CMakeLists.txt           | 33 ++++++----------
+ Example01/CMakeLists.txt |  2 +-
+ GLUS/CMakeLists.txt      | 85 ++++++++++++++++++++--------------------
+ 3 files changed, 56 insertions(+), 64 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 83d2879..6e9dc77 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -1,6 +1,6 @@
+ cmake_minimum_required(VERSION 3.6)
+ project (OpenGLExamples)
+- 
++
+ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/build)
+ set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+ 
+@@ -8,19 +8,19 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/lib)
+ 
+ IF(${CMAKE_SYSTEM_NAME} MATCHES "Darwin")
+ 	# Mac OS X
+-	
++
+ 	# Support only desktop
+-	
++
+     SET(Processor "x64")
+     SET(OperatingSystem "Darwin")
+-    SET(Compiler "GCC")	
++    SET(Compiler "GCC")
+ 
+ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 	# Linux
+ 
+ 	IF(${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm")
+ 		# Raspberry Pi and i.MX6
+-		
++
+ 		IF(${SoC} MATCHES "iMX6")
+ 			# i.MX6
+ 
+@@ -29,48 +29,39 @@ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 		ELSE()
+ 			# Raspberry Pi
+ 		ENDIF()
+-		
++
+ 	ELSE()
+ 		# Support only desktop
+-	
++
+ 		SET(Processor "x64")
+ 		SET(OperatingSystem "Linux")
+ 		SET(Compiler "GCC")
+-				
++
+ 	ENDIF()
+-	
++
+ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+ 	# Windows
+-	
++
+ 	SET(Processor "x86")
+ 	SET(OperatingSystem "Windows")
+ 	SET(Compiler "MSVC")
+ 	set(LIBRARIES_TO_LINK OpenGL32.lib glew32s.lib glfw3.lib)
+-		
++
+ ENDIF()
+ 
+-# set GLFW valiables
+-# set(BUILD_SHARED_LIBS "Build shared libraries" OFF)
+-set(GLFW_BUILD_EXAMPLES OFF CACHE BOOL "Build the GLFW example programs")
+-set(GLFW_BUILD_TESTS OFF CACHE BOOL "Build the GLFW test programs")
+-set(GLFW_BUILD_DOCS OFF CACHE BOOL "Build the GLFW documentation")
+-set(GLFW_INSTALL OFF CACHE BOOL "Generate installation target")
+ 
+ # set GLUS variables
+ set(ENV_DIR ${Processor}/${OperatingSystem}/${Compiler})
+ set(EXTERNAL_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/External/${ENV_DIR}/include)
+ set(EXTERNAL_LIB_DIR ${CMAKE_SOURCE_DIR}/External/${ENV_DIR}/lib)
+ 
+-set(GLFW_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/GLFW/include)
+ 
+-include_directories(${GLFW_INCLUDE_DIR} ${EXTERNAL_INCLUDE_DIR})
+ link_directories(${EXTERNAL_LIB_DIR} ${LIBRARY_OUTPUT_PATH})
+ 
+ add_subdirectory(GLUS)
+-add_subdirectory(GLFW)
+ 
+ file(GLOB EXAMPLES_LIST LIST_DIRECTORIES true RELATIVE ${CMAKE_SOURCE_DIR} "Example*")
+ foreach (EXAMPLE ${EXAMPLES_LIST})
+ 	message(STATUS "Add Subdirectory: " ${EXAMPLE})
+ 	add_subdirectory(${EXAMPLE})
+-endforeach()
+\ No newline at end of file
++endforeach()
+diff --git a/Example01/CMakeLists.txt b/Example01/CMakeLists.txt
+index 99476b3..1e7858b 100644
+--- a/Example01/CMakeLists.txt
++++ b/Example01/CMakeLists.txt
+@@ -10,4 +10,4 @@ source_group("Shaders" FILES ${SHADERS})
+ 
+ add_executable(${PROJECT_NAME} ${SOURCES} ${SHADERS})
+ 
+-target_link_libraries(${PROJECT_NAME} ${LIBRARIES_TO_LINK} GLUS)
+\ No newline at end of file
++target_link_libraries(${PROJECT_NAME} ${LIBRARIES_TO_LINK} GLUS)
+diff --git a/GLUS/CMakeLists.txt b/GLUS/CMakeLists.txt
+index 4d458e8..e4a72a3 100644
+--- a/GLUS/CMakeLists.txt
++++ b/GLUS/CMakeLists.txt
+@@ -6,7 +6,7 @@
+ #		Set SoC=iMX6 for i.MX6.
+ #
+ # (c) Norbert Nopper
+-# 
++#
+ 
+ cmake_minimum_required(VERSION 2.6)
+ 
+@@ -22,9 +22,9 @@ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 
+ 	IF(${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm")
+ 		# Raspberry Pi and i.MX6
+-		
++
+ 		SET(OpenGL "ES2")
+-		
++
+ 		add_definitions(-DGLUS_ES2)
+ 
+ 		IF(${SoC} MATCHES "iMX6")
+@@ -35,50 +35,50 @@ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
+ 		ELSE()
+ 			# Raspberry Pi
+ 
+-			include_directories(/opt/vc/include /opt/vc/include/interface/vcos/pthreads /opt/vc/include/interface/vmcs_host/linux)		
++			include_directories(/opt/vc/include /opt/vc/include/interface/vcos/pthreads /opt/vc/include/interface/vmcs_host/linux)
+ 
+ 		ENDIF()
+-		
++
+ 	ELSE()
+ 		# Support only desktop
+-					
++
+ 	ENDIF()
+-	
++
+ ELSEIF(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
+ 	# Windows
+-	
++
+ 	add_definitions(-D_CRT_SECURE_NO_WARNINGS)
+-	
++
+ 	IF(${OpenGL} MATCHES "ES31")
+ 		# Desktop OpenGL ES 3.1
+ 
+ 		add_definitions(-DGLUS_ES31)
+-	
+-		include_directories(C:\\Imagination\\PowerVR_Graphics\\PowerVR_SDK\\SDK_2016_R1.2\\Builds\\Include)	
++
++		include_directories(C:\\Imagination\\PowerVR_Graphics\\PowerVR_SDK\\SDK_2016_R1.2\\Builds\\Include)
+ 
+ 	ELSEIF(${OpenGL} MATCHES "ES2")
+ 		# Desktop OpenGL ES 2.0
+ 
+ 		add_definitions(-DGLUS_ES2)
+-	
+-		include_directories(C:\\Imagination\\PowerVR_Graphics\\PowerVR_SDK\\SDK_2016_R1.2\\Builds\\Include)	
++
++		include_directories(C:\\Imagination\\PowerVR_Graphics\\PowerVR_SDK\\SDK_2016_R1.2\\Builds\\Include)
+ 
+ 	ELSEIF(${OpenGL} MATCHES "ES")
+ 		# Desktop OpenGL ES 3.0
+ 
+ 		add_definitions(-DGLUS_ES)
+-	
+-		include_directories(C:\\Imagination\\PowerVR_Graphics\\PowerVR_SDK\\SDK_2016_R1.2\\Builds\\Include)	
++
++		include_directories(C:\\Imagination\\PowerVR_Graphics\\PowerVR_SDK\\SDK_2016_R1.2\\Builds\\Include)
+ 
+ 	ELSE()
+ 		# Desktop
+-			
++
+ 	ENDIF()
+-		
++
+ ENDIF()
+-	
+-include_directories(${EXTERNAL_INCLUDE_DIR})	
+-		
++
++include_directories(${EXTERNAL_INCLUDE_DIR})
++
+ # Files only valid for desktop OpenGL
+ list(APPEND ONLY_GL_C_FILES		${GLUS_SOURCE_DIR}/src/glus_window_glfw.c
+ 								${GLUS_SOURCE_DIR}/src/glus_programpipeline.c
+@@ -108,56 +108,57 @@ IF(${OpenGL} MATCHES "ES")
+ 
+ 	IF(${OpenGL} MATCHES "ES31")
+ 		# OpenGL ES 3.1
+-		
++
+ 		list(REMOVE_ITEM C_FILES ${ONLY_GL_C_FILES} ${ES2_C_FILES})
+ 
+ 	ELSEIF(${OpenGL} MATCHES "ES2")
+ 		# OpenGL ES 2.0
+-		
++
+ 		list(REMOVE_ITEM C_FILES ${ONLY_GL_C_FILES} ${ES31_C_FILES})
+ 
+-	ELSE()		
++	ELSE()
+ 		# OpenGL ES 3.0
+-		
++
+ 		list(REMOVE_ITEM C_FILES ${ONLY_GL_C_FILES} ${ES31_C_FILES} ${ES2_C_FILES})
+-	
++
+ 	ENDIF()
+-	
++
+ 	IF(${CMAKE_SYSTEM_PROCESSOR} MATCHES "arm")
+ 		# Raspberry Pi and i.MX6
+ 
+ 		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_android_es.c)
+ 		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_es.c)
+ 		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_windows_es.c)
+-		
+-		IF(${SoC} MATCHES "iMX6")			
++
++		IF(${SoC} MATCHES "iMX6")
+ 			# i.MX6
+-			
++
+ 			list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_raspberrypi_es.c)
+-			
++
+ 		ELSE()
+ 			# Raspberry Pi
+-		
++
+ 			list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_imx6_es.c)
+-			
++
+ 		ENDIF()
+-		
++
+ 	ELSE()
+ 		# Windows simulation
+-	
++
+ 		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_android_es.c)
+ 		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_es.c)
+ 		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_imx6_es.c)
+-		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_raspberrypi_es.c)		
+-		
+-	ENDIF()	
+-	
++		list(REMOVE_ITEM C_FILES ${GLUS_SOURCE_DIR}/src/glus_os_linux_raspberrypi_es.c)
++
++	ENDIF()
++
+ ELSE()
+ 	# OpenGL 3 and 4
+-	
++
+ 	list(REMOVE_ITEM C_FILES ${ES_C_FILES} ${ES2_C_FILES} ${ES31_C_FILES} ${VG_C_FILES})
+-	
++
+ ENDIF()
+ 
+-add_library(GLUS ${C_FILES} ${H_FILES})
+-target_include_directories (GLUS PUBLIC ${GLUS_SOURCE_DIR}/src)
+\ No newline at end of file
++add_library(GLUS SHARED ${C_FILES} ${H_FILES})
++target_include_directories (GLUS PUBLIC ${GLUS_SOURCE_DIR}/src)
++target_link_libraries(${PROJECT_NAME} m GLEW GL glfw )
+-- 
+2.24.1
+

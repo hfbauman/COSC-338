@@ -1,0 +1,60 @@
+McNopper's OpenGL Demos
+
+  A bunch of OpenGL demos that are fun to study.
+
+  https://github.com/McNopper/OpenGL
+
+  Patch including for running on Linux 0001-build-working-on-Linux.patch,
+  currently I have not tried building on Windows.
+
+  If you don't have GLFW installed, you may need to clone McNopper's repo,
+  "git submodule init" "git submodule update".
+
+  Verified Builds:
+    Linux
+
+Fogleman's Craft
+
+  Minecraft-like game written in modern opengl.
+
+  https://github.com/fogleman/Craft
+
+  Verified Builds:
+    Linux
+
+KGabis's raytraces
+
+  Small raytracer in C
+
+  https://github.com/kgabis/raytracer
+
+  Verified Builds:
+    Linux
+
+
+glPortal
+   A game like Valve's Portal
+
+   https://github.com/GlPortal/glPortal.git
+   https://glportal.de/
+
+SuperTuxKart
+   MarioKart-style game
+
+   https://supertuxkart.net/Main_Page
+
+VVVVVVV
+   Recently open-sourced game from a decade ago.
+
+   https://github.com/TerryCavanagh/VVVVVV.git
+   http://distractionware.com/blog/2020/01/vvvvvv-is-now-open-source/
+
+
+Neverball
+  A SuperMonkeyBall-like game.  Large project
+
+  https://github.com/Neverball/neverball
+
+Amsimeos rubik's cube
+
+   https://github.com/amsimoes/rubik-opengl
