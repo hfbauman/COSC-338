@@ -42,6 +42,7 @@
     <OutDir>Debug\</OutDir>
     <IntDir>Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\..\..\..\..\..\contrib\imgui;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>Release\</OutDir>
@@ -85,6 +86,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\contrib\imgui\imgui.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\contrib\imgui\imgui_demo.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\contrib\imgui\imgui_draw.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\contrib\imgui\imgui_impl_glut.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\contrib\imgui\imgui_impl_opengl2.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\contrib\imgui\imgui_widgets.cpp" />
     <ClCompile Include="..\..\..\..\src\chapt02\bounce\bounce.cpp" />
   </ItemGroup>
   <ItemGroup>

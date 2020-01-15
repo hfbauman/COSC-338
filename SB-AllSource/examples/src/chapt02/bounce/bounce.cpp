@@ -5,6 +5,14 @@
 // rwright@starstonesoftware.com
 
 #include "../../shared/gltools.h"	// OpenGL toolkit
+#include "imgui.h"
+#include "imgui_impl_glut.h"
+#include "imgui_impl_opengl2.h"
+#ifdef __APPLE__
+    #include <GLUT/glut.h>
+#else
+    #include <GL/freeglut.h>
+#endif
 
 
 // Initial square position and size
@@ -21,6 +29,55 @@ GLfloat ystep = 1.0f;
 GLfloat windowWidth;
 GLfloat windowHeight;
 
+
+// Our state
+static bool show_demo_window = true;
+static bool show_another_window = false;
+static ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+
+void my_display_code()
+{
+    // 1. Show the big demo window (Most of the sample code is in ImGui::ShowDemoWindow()! You can browse its code to learn more about Dear ImGui!).
+    if (show_demo_window)
+        ImGui::ShowDemoWindow(&show_demo_window);
+
+    // 2. Show a simple window that we create ourselves. We use a Begin/End pair to created a named window.
+    {
+        static float f = 0.0f;
+        static int counter = 0;
+
+        ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
+
+        ImGui::Text("This is some useful text.");               // Display some text (you can use a format strings too)
+        ImGui::Checkbox("Demo Window", &show_demo_window);      // Edit bools storing our window open/close state
+        ImGui::Checkbox("Another Window", &show_another_window);
+
+        ImGui::SliderFloat("float", &f, 0.0f, 1.0f);            // Edit 1 float using a slider from 0.0f to 1.0f
+        ImGui::ColorEdit3("clear color", (float*)&clear_color); // Edit 3 floats representing a color
+
+        if (ImGui::Button("Button"))                            // Buttons return true when clicked (most widgets return true when edited/activated)
+            counter++;
+        ImGui::SameLine();
+        ImGui::Text("counter = %d", counter);
+
+        ImGui::Text("Application average %.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
+        ImGui::End();
+    }
+
+    // 3. Show another simple window.
+    if (show_another_window)
+    {
+        ImGui::Begin("Another Window", &show_another_window);   // Pass a pointer to our bool variable (the window will have a closing button that will clear the bool when clicked)
+        ImGui::Text("Hello from another window!");
+        if (ImGui::Button("Close Me"))
+            show_another_window = false;
+        ImGui::End();
+    }
+}
+
+
+
+
 ///////////////////////////////////////////////////////////
 // Called to draw scene
 void RenderScene(void)
@@ -34,6 +91,21 @@ void RenderScene(void)
 
 	// Draw a filled rectangle with current color
 	glRectf(x, y, x + rsize, y - rsize);
+
+
+
+    // Start the Dear ImGui frame
+    ImGui_ImplOpenGL2_NewFrame();
+    ImGui_ImplGLUT_NewFrame();
+
+    my_display_code();
+
+    // Rendering
+    ImGui::Render();
+    ImGuiIO& io = ImGui::GetIO();
+    glViewport(0, 0, (GLsizei)io.DisplaySize.x, (GLsizei)io.DisplaySize.y);
+    ImGui_ImplOpenGL2_RenderDrawData(ImGui::GetDrawData());
+
 
     // Flush drawing commands and swap
     glutSwapBuffers();
@@ -57,7 +129,7 @@ void TimerFunction(int value)
     y += ystep;
 
     // Check bounds. This is in case the window is made
-    // smaller while the rectangle is bouncing and the 
+    // smaller while the rectangle is bouncing and the
 	// rectangle suddenly finds itself outside the new
     // clipping volume
     if(x > (windowWidth-rsize + xstep))
@@ -66,7 +138,7 @@ void TimerFunction(int value)
 		x = -windowWidth -1;
 
     if(y > (windowHeight + ystep))
-        y = windowHeight-1; 
+        y = windowHeight-1;
 	else if(y < -(windowHeight - rsize + ystep))
 		y = -windowHeight + rsize - 1;
 
@@ -84,6 +156,8 @@ void SetupRC(void)
     {
     // Set clear color to blue
     glClearColor(0.0f, 0.0f, 1.0f, 1.0f);
+
+
     }
 
 
@@ -96,7 +170,7 @@ void ChangeSize(int w, int h)
     // Prevent a divide by zero
     if(h == 0)
         h = 1;
-		
+
     // Set Viewport to window dimensions
     glViewport(0, 0, w, h);
 
@@ -106,13 +180,13 @@ void ChangeSize(int w, int h)
 
     // Establish clipping volume (left, right, bottom, top, near, far)
     aspectRatio = (GLfloat)w / (GLfloat)h;
-    if (w <= h) 
+    if (w <= h)
         {
         windowWidth = 100;
         windowHeight = 100 / aspectRatio;
         glOrtho (-100.0, 100.0, -windowHeight, windowHeight, 1.0, -1.0);
         }
-    else 
+    else
         {
         windowWidth = 100 * aspectRatio;
         windowHeight = 100;
@@ -121,6 +195,10 @@ void ChangeSize(int w, int h)
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
+
+    // imgui
+    ImGui_ImplGLUT_ReshapeFunc(w,h);
+
     }
 
 ///////////////////////////////////////////////////////////
@@ -128,16 +206,44 @@ void ChangeSize(int w, int h)
 int main(int argc, char* argv[])
 	{
 	glutInit(&argc, argv);
-	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
-	glutInitWindowSize(800,600);
-    glutCreateWindow("Bounce");
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_MULTISAMPLE);
+        glutInitWindowSize(800,600);
+        glutCreateWindow("Bounce");
 	glutDisplayFunc(RenderScene);
-    glutReshapeFunc(ChangeSize);
+        glutReshapeFunc(ChangeSize);
 	glutTimerFunc(33, TimerFunction, 1);
 
 	SetupRC();
 
+    // Setup Dear ImGui context
+    IMGUI_CHECKVERSION();
+    ImGui::CreateContext();
+    ImGuiIO& io = ImGui::GetIO(); (void)io;
+    //io.ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;     // Enable Keyboard Controls
+
+    // Setup Dear ImGui style
+    ImGui::StyleColorsDark();
+    //ImGui::StyleColorsClassic();
+
+    // Setup Platform/Renderer bindings
+    ImGui_ImplGLUT_Init();
+
+    // inlining of ImGui_ImplGLUT_InstallFuncs();
+    glutMotionFunc(ImGui_ImplGLUT_MotionFunc);
+    glutPassiveMotionFunc(ImGui_ImplGLUT_MotionFunc);
+#ifdef __FREEGLUT_EXT_H__
+    glutMouseWheelFunc(ImGui_ImplGLUT_MouseWheelFunc);
+#endif
+    glutMouseFunc(ImGui_ImplGLUT_MouseFunc);
+    glutKeyboardFunc(ImGui_ImplGLUT_KeyboardFunc);
+    glutKeyboardUpFunc(ImGui_ImplGLUT_KeyboardUpFunc);
+    glutSpecialFunc(ImGui_ImplGLUT_SpecialFunc);
+    glutSpecialUpFunc(ImGui_ImplGLUT_SpecialUpFunc);
+
+    ImGui_ImplOpenGL2_Init();
+
+
 	glutMainLoop();
-        
+
     return 0;
     }
