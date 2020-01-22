@@ -1,3 +1,6 @@
+opengl-tutorial.org
+        github.com/opengl-tutorials/ogl
+
 McNopper's OpenGL Demos
 
   A bunch of OpenGL demos that are fun to study.
