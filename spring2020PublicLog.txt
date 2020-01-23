@@ -1,4 +1,4 @@
 22 JAN 2020
- -TODO on Monday - Show the fun demos.  glPortal.  Water demo, etc.
+ -TODO on Monday - Show the fun demos.  glPortal.  Craft. Water demo, etc.
  -Covered up to Demo06.  Update lesson 6 regarding Global Space (as I didn't explain what that meant, I just covered NDC)
  -Redo Demo6.  Repetition is good but slow down.  Don't let speed through the repetitive parts make me go to fast on the new parts
