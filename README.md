@@ -4,16 +4,6 @@ COSC-338 - Spring 2020
 Main codebase for COSC-338.  Also see github.com/billsix/modelviewprojection
 
 
-For further information, such as lighting, shadows, and
-OpenGL in more explicit detail, consult
-1) OpenGL redbook/bluebook. (OpenGL superbible v4, because it covers fixed function and shaders)
-2) Mathematics for 3D Game Programming and Computer Graphics
-3) Computer Graphics: Principles and Practice in C (2nd Edition)
-
-For RayTracing
-1) Physically Based Rendering
-2) Ray Tracing from the Ground Up
-
 
 Approach
 --------
@@ -93,3 +83,17 @@ Other Useful Sites for Study
 * Amsimeos rubik's cube
 
   * https://github.com/amsimoes/rubik-opengl
+
+
+Other great resources
+
+
+For further information, such as lighting, shadows, and
+OpenGL in more explicit detail, consult
+1) OpenGL redbook/bluebook. (OpenGL superbible v4, because it covers fixed function and shaders)
+2) Mathematics for 3D Game Programming and Computer Graphics
+3) Computer Graphics: Principles and Practice in C (2nd Edition)
+
+For RayTracing
+1) Physically Based Rendering
+2) Ray Tracing from the Ground Up
