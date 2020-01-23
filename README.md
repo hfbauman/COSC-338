@@ -3,14 +3,6 @@ COSC-338 - Spring 2020
 
 Main codebase for COSC-338.  Also see github.com/billsix/modelviewprojection
 
-
-
-Approach
---------
-This book uses "mistake-driven-development".  I show incrementally
-how to build a more complex graphics application, making mistakes along
-the way, and then fixing the mistakes.
-
 Source
 ------
 
