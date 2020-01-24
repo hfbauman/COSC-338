@@ -30,11 +30,13 @@ Other Useful Sites for Study
   * Verified Builds:
     * Linux
 
-* Fogleman's Craft
+* Fogleman's 2 Minecraft Projects: Minecraft (Python, Fixed Function OpenGL), Craft (C, Shader-based OpenGL)
 
   * Minecraft-like game written in modern opengl.
 
-  * https://github.com/fogleman/Craft
+  * https://github.com/fogleman/Minecraft  (the Python version) (make sure to pip install pyglet)
+
+  * https://github.com/fogleman/Craft  (the C version)
 
   * Verified Builds:
     * Linux
