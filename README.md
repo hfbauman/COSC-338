@@ -15,6 +15,10 @@ Other Useful Sites for Study
 
 * opengl-tutorial.org
   * github.com/opengl-tutorials/ogl
+
+* learnopengl.com
+  * https://learnopengl.com/
+
 * McNopper's OpenGL Demos
 
   * A bunch of OpenGL demos that are fun to study.
