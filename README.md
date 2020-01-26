@@ -14,7 +14,7 @@ Other Useful Sites for Study
 ----------------------------
 
 * opengl-tutorial.org
-  * github.com/opengl-tutorials/ogl
+  * https://github.com/opengl-tutorials/ogl
 
 * learnopengl.com
   * https://learnopengl.com/
@@ -38,7 +38,7 @@ Other Useful Sites for Study
 
   * Minecraft-like game written in modern opengl.
 
-  * https://github.com/fogleman/Minecraft  (the Python version) (make sure to pip install pyglet)
+  * https://github.com/billsix/Minecraft  (the Python version)  (based off of https://github.com/fogleman/Minecraft , updated for Visual Studio 2019, and modern Python)
 
   * https://github.com/fogleman/Craft  (the C version)
 
