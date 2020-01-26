@@ -13,10 +13,10 @@ should port to MacOS, but have not done that yet
 Other Useful Sites for Study
 ----------------------------
 
-* opengl-tutorial.org
+* http://opengl-tutorial.org
   * https://github.com/opengl-tutorials/ogl
 
-* learnopengl.com
+* http://learnopengl.com
   * https://learnopengl.com/
 
 * McNopper's OpenGL Demos
