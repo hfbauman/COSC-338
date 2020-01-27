@@ -1,0 +1,16 @@
+
+Agenda 27 JAN 2020
+- Ask who has successfully downloaded modelviewprojection and
+ got it up and running.  Look at homework.txt.  I am figuring
+ out blackboard, am setting up a slack channel, in order to communicate
+ homework/assignments, and to faciliate class discussion.
+ I need feedback to ensure that everyone is on the same page,
+ whether they miss class on a day or not.
+- Ask about Python.  Did people have trouble reading the code?
+- Ask about speed of demos.
+- Show the fun demos. Minecraft in Python.  Craft in C. glPortal. opengldemos (Water demo is 15).
+- Show the MVP demo and animated demo to show why we are learning what we are learning
+- Demonstrate Method Chaining.
+- cover blocking vs non-blocking io.
+- Re go over from demo 05 on.  I went a little to fast last time.  Rego over
+ the stencil buffer, as I did not spend enough time on it.

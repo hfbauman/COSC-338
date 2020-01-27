@@ -1,7 +1,7 @@
 COSC-338 - Spring 2020
 ======================
 
-Main codebase for COSC-338.  Also see github.com/billsix/modelviewprojection
+Main codebase for COSC-338.  Also see https://github.com/billsix/modelviewprojection
 
 Source
 ------
