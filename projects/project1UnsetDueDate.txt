@@ -1,0 +1,11 @@
+DUE (Date not set, but for those who want to get ahead)
+- Implement a game of Pong in Python, using the NDC
+  coordinate system.  Pong has two paddles, and a ball
+  which moves back and forth.  If unfamiliar with the game,
+  look it up on youtube.
+  On collision of the ball
+  with and edge or a paddle, it changes direction.
+  When a score happens, a new ball should come out 3 seconds
+  later.
+  You do not need to keep track of the score, just the rendering,
+  collision detection, and changing of the ball's velocity.

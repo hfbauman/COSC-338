@@ -1,0 +1,41 @@
+DUE 03 FEB 2020
+
+Email solutions, in plain text format, to wesix@smcm.edu
+
+1)  What is an advantage of using NDC space
+   over directly using screen-space?
+2)  What is the range in 2D space for normalized
+  device coordinates?
+3) When dealing with a window that may be resized by
+ the user, what is a disadvantage of using NDC?
+4) Which 2 OpenGL functions, one which enables, one which
+  sets the bounds, makes glClear(GL_COLOR_BUFFER_BIT)
+  (and every other opengl function)
+  only work on a subset of the framebuffer?
+5) Which OpenGL call sets the conversion from NDC to
+  the viewport? (which is either the full framebuffer, or a subset of it)
+6) How many OpenGL function calls (as seen so far) are needed between
+     glBegin(GL_QUADS) and glEnd()?  What do they specify?
+7)  What does GLFW provide that OpenGL does not? i.e.,
+  why does GLFW exist?
+
+
+TODO on your own, but not to turn in.
+
+- Have git installed.  Visual Studio has git integration,
+  and is already installed on the lab's computers.
+  On Windows there is also "git bash", which is a command line
+  tool.
+  Become good enough with git that you will be able to download
+  updates (via "git pull") from modelviewprojection and
+  this repo.
+  Git will not be required for code submissions, but you
+  will need to download updates.  This could always be
+  done incrementally using github's "download zip" feature,
+  but you really should learn how to use git.
+
+  An excellent resource https://git-scm.com/book/en/v2
+
+- Make sure you can get modelviewprojection up and running
+ on your personal hardware, or on the Lab's machines, where
+ it has already been tested via visual studio.

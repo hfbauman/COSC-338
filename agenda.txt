@@ -4,13 +4,22 @@ Agenda 27 JAN 2020
  got it up and running.  Look at homework.txt.  I am figuring
  out blackboard, am setting up a slack channel, in order to communicate
  homework/assignments, and to faciliate class discussion.
- I need feedback to ensure that everyone is on the same page,
+ I need feedback to ensure that everyone will be aware of assignments,
  whether they miss class on a day or not.
-- Ask about Python.  Did people have trouble reading the code?
-- Ask about speed of demos.
+- Announce the first homework.
+- Ask about Python.  Did people have trouble reading the code?  What
+ would you like more explanation on?  I need feedback, as I do not
+ know people's programming backgrounds.  Please don't be shy.  I do
+ not know what you do not know, and to help you, I need to know.
+- Demonstrate Method Chaining.
+- Ask about speed at which I covered the demos.
 - Show the fun demos. Minecraft in Python.  Craft in C. glPortal. opengldemos (Water demo is 15).
 - Show the MVP demo and animated demo to show why we are learning what we are learning
-- Demonstrate Method Chaining.
-- cover blocking vs non-blocking io.
+- cover blocking vs non-blocking io. Describe how you are using tail.
 - Re go over from demo 05 on.  I went a little to fast last time.  Rego over
  the stencil buffer, as I did not spend enough time on it.
+- Cover up to camera space.  I doubt we will, but if we get to camera space,
+  go over the currency diagrams, and talk about inversions.  If the students
+  can understand this univariate example, they will have a solid foundation
+  to take on everything in the ModelViewProject Tree.
+  I will need to write up more in the comments for this demo though.
