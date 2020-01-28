@@ -1,3 +1,37 @@
+Notes from 27 JAN 2020
+
+Assigned homework due Monday, a week from today.
+Discussed project one, making a pong game in NDC,
+but have not set a due date, as I have not yet implemented
+it myself, which I will do before assigning any projects.
+Told everyone about getting modelviewprojection up
+and running on their home machines, as it is ungraded homework,
+but people need to be able to run these programs on their own machines,
+or in the lab, which has the requisite software (Visual Studio 2019
+with Python Extension.)
+Multiple people joined the slack channel for group
+communication.
+Discussed method chaining, how it works.  minimizes
+naming one-time use variables.  Method chaining is used
+for a simple version function composition, to introduce
+the concept which later is turned into the lambda stack, and
+then the matrix stacks.
+Showed "Minecraft" in python, Craft in C, and McNabber's
+OpenGL demos, to show what type of stuff is able to be done
+with OpenGL.  Any of these projects can be a basis for their
+final paper, which involves studying open source graphics code,
+modifying it, or just doing a write-up of what they independenly
+learned).
+Showed the mvpvisualtion demos to show the endgame of where
+modelviewprojection project is going, in order to motivate
+while going through demos, towards adding motivation towards
+understanding the intro material.
+Demos the 3 scripts which try to rotate, but glossed over
+the details due to time.  Go into the details of the math.
+Did not cover demo05 onwards through camera management as I thought
+I would, but that's ok, because the demos and history of graphics
+(Crash Bandicoot vs Mario 64, the z-buffer, and the moving cameras)
+was worthwhile.
 
 Notes from 22 JAN 2020
  -Covered up to Demo06.  Update lesson 6 regarding Global Space (as I didn't explain what that meant, I just covered NDC)
