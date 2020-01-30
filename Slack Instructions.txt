@@ -1,0 +1,11 @@
+IN ORDER TO JOIN THE GROUP ON SLACK:
+
+1.)Navigate to smcmcs.slack.com.
+
+2.)If you already have an account on Slack and have joined the SMCM Computer Science group, skip step 3.
+
+3.)Sign in with your username and password for Slack. If you don't have an account, click on "Create an account." You will be asked for your smcm.edu email address. Complete the account creation and sign into the workspace.
+
+4.)To join the Computer Graphics group: Click on "Add a channel" on the left side of the screen. Scroll or search to fine "#cosc-338". Join the channel.
+
+5.)*Optional* Download the Windows 10, Android, and/or iOS app in order to receive notifications on your device about group and chat activity.
