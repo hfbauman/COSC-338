@@ -15,6 +15,7 @@ Other Useful Sites for Study
 
 * http://opengl-tutorial.org
   * https://github.com/opengl-tutorials/ogl
+  * My branch with fixes regarding camera management on Linux https://github.com/billsix/ogl
 
 * http://learnopengl.com
   * https://learnopengl.com/
