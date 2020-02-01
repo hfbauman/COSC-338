@@ -13,6 +13,12 @@
 		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		FF8261EC23E5F60E00D5908E /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8261EB23E5F60E00D5908E /* imgui.cpp */; };
+		FF8261F223E5F68800D5908E /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8261ED23E5F68700D5908E /* imgui_demo.cpp */; };
+		FF8261F323E5F68800D5908E /* imgui_impl_glut.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8261EE23E5F68700D5908E /* imgui_impl_glut.cpp */; };
+		FF8261F423E5F68800D5908E /* imgui_impl_opengl2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8261EF23E5F68800D5908E /* imgui_impl_opengl2.cpp */; };
+		FF8261F523E5F68800D5908E /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8261F023E5F68800D5908E /* imgui_draw.cpp */; };
+		FF8261F623E5F68800D5908E /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF8261F123E5F68800D5908E /* imgui_widgets.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		39DF542B0B26575200DB72AA /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* bounce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bounce.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8261EB23E5F60E00D5908E /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui.cpp; path = ../../../../../../contrib/imgui/imgui.cpp; sourceTree = "<group>"; };
+		FF8261ED23E5F68700D5908E /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_demo.cpp; path = ../../../../../../contrib/imgui/imgui_demo.cpp; sourceTree = "<group>"; };
+		FF8261EE23E5F68700D5908E /* imgui_impl_glut.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_glut.cpp; path = ../../../../../../contrib/imgui/imgui_impl_glut.cpp; sourceTree = "<group>"; };
+		FF8261EF23E5F68800D5908E /* imgui_impl_opengl2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_impl_opengl2.cpp; path = ../../../../../../contrib/imgui/imgui_impl_opengl2.cpp; sourceTree = "<group>"; };
+		FF8261F023E5F68800D5908E /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_draw.cpp; path = ../../../../../../contrib/imgui/imgui_draw.cpp; sourceTree = "<group>"; };
+		FF8261F123E5F68800D5908E /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = imgui_widgets.cpp; path = ../../../../../../contrib/imgui/imgui_widgets.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,12 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FF8261ED23E5F68700D5908E /* imgui_demo.cpp */,
+				FF8261F023E5F68800D5908E /* imgui_draw.cpp */,
+				FF8261EE23E5F68700D5908E /* imgui_impl_glut.cpp */,
+				FF8261EF23E5F68800D5908E /* imgui_impl_opengl2.cpp */,
+				FF8261F123E5F68800D5908E /* imgui_widgets.cpp */,
+				FF8261EB23E5F60E00D5908E /* imgui.cpp */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -184,6 +202,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				39DF54260B26570100DB72AA /* bounce.cpp in Sources */,
+				FF8261EC23E5F60E00D5908E /* imgui.cpp in Sources */,
+				FF8261F423E5F68800D5908E /* imgui_impl_opengl2.cpp in Sources */,
+				FF8261F523E5F68800D5908E /* imgui_draw.cpp in Sources */,
+				FF8261F223E5F68800D5908E /* imgui_demo.cpp in Sources */,
+				FF8261F323E5F68800D5908E /* imgui_impl_glut.cpp in Sources */,
+				FF8261F623E5F68800D5908E /* imgui_widgets.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
