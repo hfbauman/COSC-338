@@ -1,3 +1,17 @@
+Notes from 29 JAN 2020
+Covered from demo 6 - 10, camera management.
+Covered making a directed acyclic graph on
+the transformations, where NDC is always
+relative to camera space, but showed how camera
+space can be defined relative to world space,
+or world space can be defined relative to camera
+space. (When you're driving in your car, is your
+car rotating the entire globe around while your
+car is staying still, or is the earth still
+and your car moving?)
+Told class about written homework due Monday.
+
+
 Notes from 27 JAN 2020
 
 Assigned homework due Monday, a week from today.
