@@ -1,16 +1,24 @@
+Agenda 03 FEB 2020
 
-Agenda 29 JAN 2020
+Rego-over 2D rotations.  The following link covers them
+from a trigonometry point of view
+https://www.alanzucconi.com/2016/02/03/2d-rotations/
 
-- demo GLPortal - make sure it's built correctly
-- cover the math behind the 3 rotation demos.
-- re-cover the scissor test
+- go over demo 11 - 16.  Covering a square relative to a paddle.
+  continue explaining camera space and how to think about that
+  differently.
+  introduce the z axis, and rewrite the demos in 3D mode.
+  Code will show that objects drawn later in the event loop
+  overwrite existing objects in the framebuffer.  Later demos
+  fix that by introducing a depth test.
+  We will cover ortho, which puts any arbitrary rectangular
+  prism into NDC, and try making a 3D camera which doesn't
+  work well because it uses ortho.  Will fix that with a
+  later demo which takes the z distance into account,
+  to make further away objects appears smaller
+
 - cover blocking vs non-blocking io. Describe how you are using tail.
-- Re go over from demo 06 on, make sure to show demo06.png.  I went a little to fast last time.
-- Cover up to camera space (demo10).  I doubt we will, but if we get to camera space,
-  go over the currency diagrams, and talk about inversions.  If the students
-  can understand this univariate example, they will have a solid foundation
-  to take on everything in the ModelViewProject Tree.
-  I will need to write up more in the comments for this demo though.
+
 
 
 Material to be covered at unknown date that may not be covered in the book:
